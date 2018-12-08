@@ -1,0 +1,63 @@
+.note{
+  position: absolute;
+  color: #333;
+  width: 160px;
+  margin: 20px 10px;
+  transition: all 0.5s;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  overflow: hidden;
+
+  .note-head{
+    height: 20px;
+    background-color: #ea9b35;
+    cursor: move;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 10px;
+    color: #666;
+    
+
+    
+
+    .nhr{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #000;
+      .username{
+        width: 100%;
+        height: 18px;
+        line-height: 18px;
+        color: #000;
+      }
+  
+      .delete {
+        width: 18px;
+        height: 18px;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity .3s;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+  }
+
+  .note-ct{
+    padding: 10px;
+    background-color: #efb04e;
+    outline: none;
+  }
+
+}
+
+.draggable{
+  opacity: 0.8;
+  cursor:move;
+  transition: none;
+}
